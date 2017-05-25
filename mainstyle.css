@@ -1,0 +1,65 @@
+* {
+    color: white;
+}
+.mainf{
+    font-family: 'Coustard', serif;
+}
+.main {
+    min-width: 310px;
+}
+.itemheader {
+    font-size: 54px;
+    padding: 30px 0;
+    font-family: 'Shrikhand', cursive;
+}
+#portfolio {
+    background-image: url("https://image.ibb.co/cmCJXa/backportf.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#iconsbar{
+    padding: 30px 0;
+}
+.icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+.icon:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 3px grey;
+    border-color: grey;
+}
+.row a {
+    color: black;
+    text-decoration: none;
+}
+figcaption {
+    font-size: 24px;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+footer {
+    background: black;
+}
+footer > p {
+    font-size: 20px;
+    margin: 0 auto;
+}
+.sign {
+    padding: 10px 0;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    width: 310px;
+}
+.proj:hover figcaption {
+    color: orange;
+}
+@media screen and (max-width: 576px) {
+    footer > p {
+        width: 95%;
+    }
+}
