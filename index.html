@@ -7,9 +7,46 @@
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Caveat|Kaushan+Script|Pacifico|Shrikhand|Coustard" rel="stylesheet" />
         <link href="mainstyle.css" rel="stylesheet" />
-    </head>
+        </head>
     <body>
         <div class="text-center main">
+            <nav>
+                <a class="" href="#home">Home</a>
+                <a class="" href="#about">About</a>
+                <a class="" href="#portfolio">Portfolio</a>
+                <a class="" href="#contacts">Contacts</a>
+            </nav>
+            <div id="home" class="jumbotron">
+                <div class="pt-5 container mainf">
+                    <h1 class="p-md-3 p-sm-4 greeting">Welcome, Guest!</h1>
+                    <p class="p-sm-4">I'm very glad to see you on my web page!</p>
+                    <div class="pt-3 p-sm-4"><img id="photo" src="https://image.ibb.co/g6gJFv/me.png" alt="me" /></div>
+                    <h3 class="pt-3">Sergey Shalimov</h3>
+                    <h3 class="pb-5">Volgograd, Russian Federation</h3>
+                </div>
+            </div>
+            <div id="about">
+                <h1 class="itemheader">About me</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <img class="mb-md-5" src="" style="width: 100%; padding: 10px;" alt="certification"/>
+                        </div>
+                        <div class="col-xl-6 mainf">
+                            <p class="mt-xl-4 mb-4">I'm self-taught web-developer. I've studied on Codecademy, CodeSchool, and freeCodeCamp.
+                            <h3>My competences:</h3></br>
+                            <ul class="compet">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                                <li>GIT</li>
+                                <li>ReactJS (studying)</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="portfolio">
                 <div class="container">
                     <h1 class="itemheader">My works</h1>
@@ -71,14 +108,19 @@
                 <h1 id="contacts" class="itemheader">Contacts</h1>
                 <p class="mainf">These projects created for freeCodeCamp.<br/>I will be glad to receive feedback about my projects!<br/>Thank you for attention :)</p>
                 <div id="iconsbar">
-                    <span style="padding: 0 10px; line-height: 70px;"><a href="https://github.com/sshal" target="_blank"><img class="icon" src="https://image.ibb.co/kkNJXa/github.png" alt="github" /></a></span>
-                    <span style="padding: 0 10px; line-height: 70px;"><a href="https://codepen.io/sergeyshalimov/" target="_blank"><img class="icon" src="https://image.ibb.co/haUnQv/codepen.png" alt="codepen" /></a></span>
-                    <span style="padding: 0 10px; line-height: 70px;"><a href="https://www.linkedin.com/in/sshal/" target="_blank"><img class="icon" src="https://image.ibb.co/goUMkv/linkedin.png" alt="linkedin" /></a></span>
-                    <span style="padding: 0 10px; line-height: 70px;"><a href="https://www.freecodecamp.com/sshal" target="_blank"><img class="icon" src="https://image.ibb.co/dGPMkv/freecodecamp.png" alt="freecodecamp" /></a></span>
-                    <span style="padding: 0 10px; line-height: 70px;"><img class="icon" src="https://image.ibb.co/eszbJF/headhunter.png" alt="headhunter" /></span>
+                    <span class="spic"><a href="https://github.com/sshal" target="_blank"><img class="icon" src="https://image.ibb.co/kkNJXa/github.png" alt="github" /></a></span>
+                    <span class="spic"><a href="https://codepen.io/sergeyshalimov/" target="_blank"><img class="icon" src="https://image.ibb.co/haUnQv/codepen.png" alt="codepen" /></a></span>
+                    <span class="spic"><a href="https://www.linkedin.com/in/sergey-shalimov-a8190a11a/" target="_blank"><img class="icon" src="https://image.ibb.co/goUMkv/linkedin.png" alt="linkedin" /></a></span>
+                    <span class="spic"><a href="https://www.freecodecamp.com/sshal" target="_blank"><img class="icon" src="https://image.ibb.co/dGPMkv/freecodecamp.png" alt="freecodecamp" /></a></span>
+                    <span class="spic"><img class="icon" src="https://image.ibb.co/eszbJF/headhunter.png" alt="headhunter" /></span>
                 </div>
                 <p class="sign">Coded by Sergey Shalimov, 2017</p>
             </footer>
         </div>
+        <script>
+            document.getElementById("portfolio").addEventListener("oncopy", function() {
+                alert("AAAa");
+            });
+        </script>
     </body>
 </html>

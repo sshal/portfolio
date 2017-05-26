@@ -1,6 +1,27 @@
 * {
     color: white;
 }
+ul {
+    list-style: none;
+}
+.compet {
+    font-size: 1.5em;
+}
+nav {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 2;
+}
+nav a {
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
 .mainf{
     font-family: 'Coustard', serif;
 }
@@ -8,15 +29,32 @@
     min-width: 310px;
 }
 .itemheader {
-    font-size: 54px;
+    font-size: 56px;
     padding: 30px 0;
     font-family: 'Shrikhand', cursive;
 }
-#portfolio {
-    background-image: url("https://image.ibb.co/cmCJXa/backportf.jpg");
+#home {
+    background-image: url("https://image.ibb.co/eJR78F/space.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.greeting {
+    font-size: 4em;
+}
+#about, #portfolio {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+#about {
+    background-image: url("https://image.ibb.co/cmCJXa/backportf.jpg");
+}
+#photo {
+    border-radius: 100%;
+    height: 180px;
+}
+#portfolio {
+    background-image: url("https://image.ibb.co/bD53ha/brick.jpg");
 }
 #iconsbar{
     padding: 30px 0;
@@ -32,9 +70,9 @@
     box-shadow: 0 0 5px 3px grey;
     border-color: grey;
 }
-.row a {
-    color: black;
-    text-decoration: none;
+.spic {
+    padding: 0 10px;
+    line-height: 70px;
 }
 figcaption {
     font-size: 24px;
@@ -44,7 +82,7 @@ figcaption {
 footer {
     background: black;
 }
-footer > p {
+p {
     font-size: 20px;
     margin: 0 auto;
 }
@@ -58,8 +96,18 @@ footer > p {
 .proj:hover figcaption {
     color: orange;
 }
+.jumbotron {
+    border-radius: 0;
+    margin: 0;
+}
 @media screen and (max-width: 576px) {
     footer > p {
         width: 95%;
+    }
+    nav a {
+        padding: 10px 5px;
+    }
+    .greeting {
+        font-size: 3em;
     }
 }
